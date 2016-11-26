@@ -42,7 +42,6 @@ public class ResponsiveUIUser implements Runnable {
                     ex.printStackTrace();
                 }
             }
-
             int sleep = (int) (Math.random() * 90) + 10;
             synchronized(this) {
                 System.out.print("\tUSER " + userID + " • TASK " + taskID);
