@@ -11,7 +11,8 @@ public class ResponsiveUIApp {
     }
 
     public void execute(Runnable task) {
-        System.out.println("\t• total tasks started " + ++totalTasksStarted + " • max wait = " + getMaxWait() + " ms");
+        System.out.println("\t• total tasks started " + ++totalTasksStarted
+                + " • max wait = " + getMaxWait() + " ms");
         exec.execute(task);
     }
 }

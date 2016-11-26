@@ -26,6 +26,7 @@ public class ResponsiveUIUser implements Runnable {
 
     private void launch() {
         for (int i=0; i<NUMBER_OF_USERS; i++) {
+            // new user has random waitThreshold between 1000 and 2000 ms
             new ResponsiveUIUser(((int) (Math.random() * 1000)) + 1000);
         }
         executorService.shutdown();
@@ -42,6 +43,7 @@ public class ResponsiveUIUser implements Runnable {
                     ex.printStackTrace();
                 }
             }
+            // random task length between 10 and 100 ms
             int sleep = (int) (Math.random() * 90) + 10;
             synchronized(this) {
                 System.out.print("\tUSER " + userID + " • TASK " + taskID);
