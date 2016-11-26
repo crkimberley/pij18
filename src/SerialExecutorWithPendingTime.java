@@ -10,6 +10,6 @@ public class SerialExecutorWithPendingTime extends SerialExecutor implements Exe
     }
 
     public int getMaxPendingTime() {
-        return tasks.size() * 1000;
+        return tasks.size() * 100;
     }
 }

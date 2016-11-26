@@ -6,7 +6,7 @@ public class TimedTask implements Runnable {
     private int sleep;
 
     public TimedTask(int sleep) {
-        this.sleep = sleep <= 1000 ? sleep : 1000;
+        this.sleep = sleep <= 100 ? sleep : 100;
     }
 
     public void run() {
