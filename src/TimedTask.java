@@ -1,6 +1,7 @@
 /**
  * @author crkimberley on 15/11/2016.
  */
+// Max time reduced to 100ms
 public class TimedTask implements Runnable {
 
     private int sleep;
